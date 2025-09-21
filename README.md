@@ -2,7 +2,7 @@
 This is the official code for CoRL 2024 work "Verification of Neural Control Barrier Functions with Symbolic Derivative Bounds Propagation".
 
 ## *Update: Python implementation of training neural CBF*
-**We have released the Python implementation of data collection, neural CBF model training, and visualization to further facilitate the research community. Checkout [RUN_PYTHON.md](./python/RUN_PYTHON.md) for details.**
+**We have released the Python implementation of data collection, neural CBF model training, and visualization to further facilitate the research community. Checkout [Python Implementation](./python#python-implementation) for details.**
 
 ## Preparation
 The code is based on [Julia](https://julialang.org/) and is tested with Julia v1.9.4. Check [here](https://julialang.org/downloads/oldreleases/) to install Julia environment. Install `ModelVerification.jl` from [this repo](https://github.com/intelligent-control-lab/ModelVerification.jl) and check out the branch `verify_gradient` [here](https://github.com/intelligent-control-lab/ModelVerification.jl/tree/verify_gradient). Install `RobotZoo.jl` from [this repo](https://github.com/RoboticExplorationLab/RobotZoo.jl) and `TaylorModels.jl` from [here](https://github.com/JuliaIntervals/TaylorModels.jl). 
