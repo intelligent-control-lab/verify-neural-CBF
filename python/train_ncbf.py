@@ -220,7 +220,7 @@ def loss_naive_safeset(phi, x, y_init):
     phi_x = phi(x).squeeze(1)  # [batch_size]
     
     # (2*y_init - 1) maps safe to 1 and unsafe to -1
-    # We want phi(x) to be positive for safe states and negative for unsafe states
+    # We want phi(x) to be negative for safe states and positive for unsafe states
     # loss is positive when constraint is violated
     loss = relu((2 * y_init - 1) * phi_x + 1e-6)
     
